@@ -1,12 +1,15 @@
-import { Link } from "react-router-dom";
+export default function Logo() {
+  const toTop = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
-export default function Logo({ onClick }) {
   return (
-    <Link
-      to="/"
+    <a
+      href="#top"
       className="logo"
-      onClick={onClick}
-      aria-label="Caribelle Advisory — home"
+      onClick={toTop}
+      aria-label="Caribelle Advisory — back to top"
     >
       <span className="logo-mark" aria-hidden="true">
         <svg viewBox="0 0 40 40" width="24" height="24">
@@ -22,6 +25,6 @@ export default function Logo({ onClick }) {
       <span className="logo-type">
         Caribelle<span className="logo-sub"> Advisory</span>
       </span>
-    </Link>
+    </a>
   );
 }

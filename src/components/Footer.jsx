@@ -1,8 +1,14 @@
-import { Link } from "react-router-dom";
-import { nav, brand } from "../data/site";
+import { brand, sections } from "../data/site";
 
 export default function Footer() {
   const year = new Date().getFullYear();
+
+  const go = (e, id) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <footer className="footer theme-dark">
       <div className="container">
@@ -20,12 +26,15 @@ export default function Footer() {
             <div className="footer-col">
               <p className="footer-h">Navigate</p>
               <ul>
-                <li>
-                  <Link to="/" className="footer-link">Home</Link>
-                </li>
-                {nav.map((n) => (
-                  <li key={n.to}>
-                    <Link to={n.to} className="footer-link">{n.label}</Link>
+                {sections.map((s) => (
+                  <li key={s.id}>
+                    <a
+                      href={`#${s.id}`}
+                      className="footer-link"
+                      onClick={(e) => go(e, s.id)}
+                    >
+                      {s.label}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -38,9 +47,6 @@ export default function Footer() {
                   <a href={`mailto:${brand.email}`} className="footer-link">
                     {brand.email}
                   </a>
-                </li>
-                <li>
-                  <Link to="/contact" className="footer-link">Start a conversation</Link>
                 </li>
                 <li><span className="footer-muted">{brand.location}</span></li>
               </ul>

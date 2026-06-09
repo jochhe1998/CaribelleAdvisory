@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Aurora from "../components/Aurora";
 import joseph from "../assets/joseph.jpeg";
@@ -64,12 +63,12 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: EASE, delay: 0.85 }}
           >
-            <Link to="/contact" className="btn btn-gold">
+            <a href="#contact" className="btn btn-gold">
               Start a conversation <span className="arrow">→</span>
-            </Link>
-            <Link to="/track-record" className="btn btn-ghost">
+            </a>
+            <a href="#track-record" className="btn btn-ghost">
               See the track record <span className="arrow">→</span>
-            </Link>
+            </a>
           </motion.div>
         </div>
 

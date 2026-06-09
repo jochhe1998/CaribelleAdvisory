@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
 import Reveal from "../components/Reveal";
 import Aurora from "../components/Aurora";
+import { brand } from "../data/site";
 
 export default function ContactCTA() {
   return (
-    <section className="section theme-forest contact-cta">
+    <section id="contact" className="section theme-forest contact-cta">
       <Aurora variant="gold" />
       <div className="container contact-cta-inner">
         <Reveal>
@@ -24,9 +24,9 @@ export default function ContactCTA() {
         </Reveal>
 
         <Reveal delay={0.18} className="contact-cta-actions flex gap wrap">
-          <Link to="/contact" className="btn btn-gold">
+          <a href={`mailto:${brand.email}`} className="btn btn-gold">
             Start a conversation <span className="arrow">→</span>
-          </Link>
+          </a>
         </Reveal>
 
         <Reveal delay={0.24}>

@@ -4,7 +4,7 @@ import { about, stats } from "../data/site";
 
 export default function AboutBand() {
   return (
-    <section className="section theme-paper about-band">
+    <section id="about" className="section theme-paper about-band">
       <div className="container">
         <div className="about-grid">
           <div className="about-head">
@@ -22,9 +22,6 @@ export default function AboutBand() {
                 <p className="lede">{p}</p>
               </Reveal>
             ))}
-            <Reveal delay={0.1}>
-              <blockquote className="about-pull">{about.pull}</blockquote>
-            </Reveal>
           </div>
         </div>
 

@@ -1,88 +1,119 @@
 // ============================================================
 // CARIBELLE ADVISORY — Content (source of truth)
-// Pulled from the client brief. Edit copy here in one place.
+// Single-page site. Edit copy here in one place.
 // ============================================================
 
 export const brand = {
   name: "Caribelle Advisory",
   principal: "Joseph",
-  // TODO: confirm full name, LinkedIn, location, scheduling link
+  // TODO: confirm full name, LinkedIn, scheduling link
   email: "joseph.herrera@caribelleadvisory.com",
   location: "Caribbean & North America",
 };
 
+// Landing-page sections — drives the side nav and footer links.
+export const sections = [
+  { id: "about", label: "About" },
+  { id: "what-we-do", label: "What we do" },
+  { id: "services", label: "Work together" },
+  { id: "track-record", label: "Track record" },
+  { id: "clients", label: "Clients" },
+  { id: "contact", label: "Contact" },
+];
+
 export const hero = {
-  eyebrow: "Boutique Strategy & Operations",
-  // The punch line (slide 5)
-  headline: [
-    "MBB performance.",
-    "Without the price.",
-  ],
+  eyebrow: "Boutique strategy & operations consultant",
+  headline: ["MBB performance.", "Without the price."],
   sub: "Boston Consulting Group–trained freelance consultant & boutique consultancy.",
 };
 
 export const about = {
   eyebrow: "About",
-  title: "A Big-3 operator, partner-direct.",
+  title: "A Big-3 Operator, working 1:1 with you.",
   paragraphs: [
-    "Joseph spent his career at the Boston Consulting Group (US) — one of the world's “Big 3” strategy firms — leading large-scale operating-model and organizational transformations for some of the largest companies in energy, chemicals, and industrials.",
-    "He left BCG to get married and start his family, and now provides international consulting services across the Caribbean and North America — individual freelance and small-team projects.",
+    "Joseph spent his career at the Boston Consulting Group Houston — one of the world's “Big 3” strategy firms — leading large-scale organizational and operations transformations for some of the largest companies in energy, chemicals, and industrials.",
+    "He left BCG to get married and start his family, and now provides international consulting services across North America and the Caribbean, both as an individual freelancer and leading small-team projects.",
   ],
-  pull:
-    "Freed up $150M+ across transformational initiatives · unified 10,000+ employees across 50+ countries · four years inside the Boston Consulting Group.",
 };
 
 export const stats = [
   { value: 150, prefix: "$", suffix: "M+", label: "In transformational initiatives" },
-  { value: 10000, suffix: "+", label: "Org moves" },
-  { value: 50, suffix: "+", label: "Countries under one operating model" },
+  { value: 10000, suffix: "+", label: "Roles updated and relocated" },
   { value: 4, suffix: "", label: "Years of BCG experience" },
 ];
 
+// New "What we do" capability matrix (sits before the engagement models).
+export const whatWeDo = {
+  eyebrow: "Capabilities",
+  title: "What we do.",
+  groups: [
+    {
+      heading: "Strategy & Growth",
+      items: [
+        "Corporate & growth strategy",
+        "Market entry and expansion",
+        "Pricing strategy",
+        "Customer experience transformation",
+      ],
+    },
+    {
+      heading: "Operations",
+      items: [
+        "Procurement diagnostic and transformation",
+        "Shared services center setup & offshoring",
+      ],
+    },
+    {
+      heading: "Organization & People",
+      items: [
+        "Org design",
+        "Workforce planning",
+        "Compensation and incentive design",
+        "HR transformation",
+      ],
+    },
+    {
+      heading: "Digital, Data & Tech",
+      items: [
+        "Custom software build and implementation (partnership)",
+        "Digital transformation strategy",
+        "AI / GenAI strategy",
+      ],
+    },
+  ],
+};
+
+// Engagement models — four ways to work together.
 export const offerings = [
   {
     no: "01",
-    title: "Consulting Horsepower",
+    title: "Ad-hoc Support",
     summary:
-      "Immediate ramp-up for your team's high-impact projects that need additional senior support.",
-    points: [
-      "Senior, BCG-trained capacity on demand",
-      "Embeds with your team — no spin-up tax",
-      "Best for stretched workstreams, tight deadlines, or to reduce project overheads",
-    ],
+      "Immediate full-time or part-time support with no contract (surge pricing) — embed with your team and spin up as we go.",
+    bestFor: "High-impact projects with tight deadlines, or under-resourced teams.",
   },
   {
     no: "02",
-    title: "Caribelle Led Projects",
+    title: "Weekly Retainers",
     summary:
-      "Discrete, well-defined mandates priced to outcome — diligence to delivery.",
-    groups: [
-      {
-        heading: "Corporate Strategy",
-        items: [
-          "Due diligences",
-          "Operating model redesign",
-          "Procurement strategy",
-          "Tech & AI roadmap design",
-        ],
-      },
-      {
-        heading: "Operational work",
-        items: [
-          "Custom software build & implementation — partnered with Silver Tongue Contracting",
-        ],
-      },
-    ],
+      "Retainer-based hourly work — e.g. 10 hours per week, for 6 weeks.",
+    bestFor:
+      "Small–mid teams that can't commit to a new role, need flexible support, or want an outside perspective.",
   },
   {
     no: "03",
-    title: "Full-Program Delivery",
+    title: "Caribelle Led Projects",
+    summary: "Scoped projects with fixed outcomes & deliverables.",
+    bestFor:
+      "Small–large businesses who want outside perspectives or capabilities not currently in-house.",
+  },
+  {
+    no: "04",
+    title: "Major Transformational Program",
     summary:
-      "We can support larger mandates for up to 3–4 person teams.",
-    points: [
-      "End-to-end business transformation",
-      "Strategy and implementation",
-    ],
+      "Major strategic business projects, with or without implementation — end-to-end transformation delivered by a small 3–4 person team.",
+    bestFor:
+      "Med–large businesses pursuing major strategic and implementation transformations; best suited to technology transformations.",
   },
 ];
 
@@ -125,8 +156,8 @@ export const cases = [
   },
 ];
 
-// Real engagements from Joseph's BCG career. Logos sourced live with a
-// graceful monochrome-wordmark fallback; swap in official assets later.
+// Real engagements from Joseph's BCG career. Logos in /public/logos,
+// with a graceful name-only fallback.
 export const clients = [
   { name: "ExxonMobil", domain: "exxonmobil.com" },
   { name: "Chevron", domain: "chevron.com" },
@@ -142,45 +173,4 @@ export const clients = [
   { name: "Owens & Minor", domain: "owens-minor.com" },
   { name: "Humana", domain: "humana.com" },
   { name: "CVS Health", domain: "cvshealth.com" },
-];
-
-export const approach = {
-  eyebrow: "How I Work",
-  title: "Senior-led from first call to last mile.",
-  intro:
-    "No analyst telephone game, no fly-in-fly-out teams. You work directly with the person doing the thinking — backed by a partner network when scale demands it.",
-  steps: [
-    {
-      no: "01",
-      title: "Scope",
-      body: "A tight, honest conversation about the problem, the prize, and what “done” looks like. Fixed scope where it helps you.",
-    },
-    {
-      no: "02",
-      title: "Mobilize",
-      body: "Embed fast. For larger programs, stand up a vetted team through the partner model — calibrated to the mandate, not a staffing pyramid.",
-    },
-    {
-      no: "03",
-      title: "Deliver",
-      body: "Senior hands on the work. Crisp analysis, real recommendations, and the implementation muscle to get them over the line.",
-    },
-    {
-      no: "04",
-      title: "Transition",
-      body: "Capability left behind, not dependency. You keep the model, the tools, and the team that can run it.",
-    },
-  ],
-  partner: {
-    title: "The partner model",
-    body: "For full programs, Caribelle Advisory fields an entire team through a network of trusted consultants and delivery partners — including Silver Tongue Contracting for custom software and implementation. You get scale and seniority without a legacy firm's overhead.",
-  },
-};
-
-export const nav = [
-  { label: "About", to: "/about" },
-  { label: "What I Do", to: "/what-i-do" },
-  { label: "Track Record", to: "/track-record" },
-  { label: "How I Work", to: "/how-i-work" },
-  { label: "Contact", to: "/contact" },
 ];
