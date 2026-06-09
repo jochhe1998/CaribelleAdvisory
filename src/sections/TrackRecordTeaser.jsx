@@ -19,7 +19,7 @@ export default function TrackRecordTeaser() {
           </div>
           <Reveal delay={0.12} className="section-head-aside">
             <Link to="/track-record" className="link-u">
-              See all case studies <span className="arrow">→</span>
+              Prior projects delivered <span className="arrow">→</span>
             </Link>
           </Reveal>
         </div>

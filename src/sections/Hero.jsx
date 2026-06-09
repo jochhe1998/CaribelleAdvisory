@@ -23,7 +23,6 @@ export default function Hero() {
     <section ref={ref} className="hero theme-dark" onPointerMove={onMove}>
       <Aurora variant="teal" />
       <div className="hero-spot" aria-hidden="true" />
-      <div className="hero-grid-lines" aria-hidden="true" />
 
       <div className="container hero-inner">
         <div className="hero-copy">
@@ -40,7 +39,6 @@ export default function Hero() {
             {hero.headline.map((line, i) => (
               <span className="hero-line" key={i}>
                 <motion.span
-                  className={i === 0 ? "" : "hero-em"}
                   initial={{ y: "110%" }}
                   animate={{ y: 0 }}
                   transition={{ duration: 0.95, ease: EASE, delay: 0.22 + i * 0.11 }}
@@ -92,7 +90,7 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: EASE, delay: 1 }}
           >
             <span className="serif-accent hero-portrait-name">Joseph</span>
-            <span className="hero-portrait-role">Principal · ex–BCG</span>
+            <span className="hero-portrait-role">Freelancer · ex–BCG</span>
           </motion.div>
         </motion.div>
       </div>

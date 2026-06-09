@@ -495,9 +495,17 @@
   position: relative;
 }
 .theme-paper .offer-summary, .theme-cream .offer-summary { color: var(--ink-soft); }
+.offer-card-detail { margin-top: auto; }
+.offer-group + .offer-group { margin-top: 1.15rem; }
+.offer-group-heading {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  color: var(--gold-bright);
+  margin-bottom: 0.65rem;
+}
 .offer-points {
   list-style: none;
-  margin-top: auto;
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
@@ -846,6 +854,14 @@
   font-size: 1rem;
 }
 .point-tick { color: var(--gold); font-size: 0.7rem; flex-shrink: 0; }
+.offer-row-group + .offer-row-group { margin-top: 1.3rem; }
+.offer-row-group-heading {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  color: var(--forest);
+  margin-bottom: 0.7rem;
+}
 
 /* ============================================================
    CONTACT PAGE

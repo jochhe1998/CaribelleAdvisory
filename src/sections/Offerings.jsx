@@ -13,7 +13,7 @@ export default function Offerings() {
             </Reveal>
             <Reveal delay={0.06}>
               <h2 className="h-section">
-                Three ways to put senior firepower on your problem.
+                Three ways we can work together.
               </h2>
             </Reveal>
           </div>
@@ -30,11 +30,26 @@ export default function Offerings() {
               <span className="offer-no">{o.no}</span>
               <h3 className="h-card offer-title">{o.title}</h3>
               <p className="offer-summary">{o.summary}</p>
-              <ul className="offer-points">
-                {o.points.map((p, j) => (
-                  <li key={j}>{p}</li>
-                ))}
-              </ul>
+              <div className="offer-card-detail">
+                {o.groups ? (
+                  o.groups.map((g, gi) => (
+                    <div className="offer-group" key={gi}>
+                      <span className="offer-group-heading">{g.heading}</span>
+                      <ul className="offer-points">
+                        {g.items.map((it, j) => (
+                          <li key={j}>{it}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))
+                ) : (
+                  <ul className="offer-points">
+                    {o.points.map((p, j) => (
+                      <li key={j}>{p}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             </Reveal>
           ))}
         </div>

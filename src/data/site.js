@@ -6,8 +6,8 @@
 export const brand = {
   name: "Caribelle Advisory",
   principal: "Joseph",
-  // TODO: confirm full name, email, LinkedIn, location, scheduling link
-  email: "hello@caribelleadvisory.com",
+  // TODO: confirm full name, LinkedIn, location, scheduling link
+  email: "joseph.herrera@caribelleadvisory.com",
   location: "Caribbean & North America",
 };
 
@@ -16,12 +16,9 @@ export const hero = {
   // The punch line (slide 5)
   headline: [
     "MBB performance.",
-    "Without the bloat,",
-    "fly-in teams, or",
-    "legacy price tag.",
+    "Without the price.",
   ],
-  // emphasised words rendered in italic gold via <em>
-  sub: "Boston Consulting Group–trained operating-model and transformation work for energy, chemicals, and industrials — delivered partner-direct across the Caribbean and North America.",
+  sub: "Boston Consulting Group–trained freelance consultant & boutique consultancy.",
 };
 
 export const about = {
@@ -29,17 +26,17 @@ export const about = {
   title: "A Big-3 operator, partner-direct.",
   paragraphs: [
     "Joseph spent his career at the Boston Consulting Group (US) — one of the world's “Big 3” strategy firms — leading large-scale operating-model and organizational transformations for some of the largest companies in energy, chemicals, and industrials.",
-    "He left BCG to get married and start his family, and now provides international consulting services across the Caribbean and North America — senior-led, lean, and without the legacy overhead.",
+    "He left BCG to get married and start his family, and now provides international consulting services across the Caribbean and North America — individual freelance and small-team projects.",
   ],
   pull:
-    "Freed up $100M+ in in-year cash flow · unified 10,000+ employees across 50+ countries · consolidated multi-function organizations of 3,000+ people.",
+    "Freed up $150M+ across transformational initiatives · unified 10,000+ employees across 50+ countries · four years inside the Boston Consulting Group.",
 };
 
 export const stats = [
-  { value: 100, prefix: "$", suffix: "M+", label: "In-year cash flow freed up" },
-  { value: 10000, suffix: "+", label: "Employees unified globally" },
+  { value: 150, prefix: "$", suffix: "M+", label: "In transformational initiatives" },
+  { value: 10000, suffix: "+", label: "Org moves" },
   { value: 50, suffix: "+", label: "Countries under one operating model" },
-  { value: 3000, suffix: "+", label: "Person organizations consolidated" },
+  { value: 4, suffix: "", label: "Years of BCG experience" },
 ];
 
 export const offerings = [
@@ -47,34 +44,44 @@ export const offerings = [
     no: "01",
     title: "Consulting Horsepower",
     summary:
-      "Immediate ramp-up and contribution to your high-impact projects that need additional throughput to get over the line.",
+      "Immediate ramp-up for your team's high-impact projects that need additional senior support.",
     points: [
       "Senior, BCG-trained capacity on demand",
       "Embeds with your team — no spin-up tax",
-      "Best for stretched workstreams and deadlines",
+      "Best for stretched workstreams, tight deadlines, or to reduce project overheads",
     ],
   },
   {
     no: "02",
-    title: "Fixed-Scope & Hourly Projects",
+    title: "Caribelle Led Projects",
     summary:
       "Discrete, well-defined mandates priced to outcome — diligence to delivery.",
-    points: [
-      "Due diligence & competitive analysis",
-      "Procurement support & operating-model redesign",
-      "AI roadmaps",
-      "Custom software & implementation — with Silver Tongue Contracting",
+    groups: [
+      {
+        heading: "Corporate Strategy",
+        items: [
+          "Due diligences",
+          "Operating model redesign",
+          "Procurement strategy",
+          "Tech & AI roadmap design",
+        ],
+      },
+      {
+        heading: "Operational work",
+        items: [
+          "Custom software build & implementation — partnered with Silver Tongue Contracting",
+        ],
+      },
     ],
   },
   {
     no: "03",
     title: "Full-Program Delivery",
     summary:
-      "For larger mandates we partner with additional consultants to field an entire team — end to end.",
+      "We can support larger mandates for up to 3–4 person teams.",
     points: [
-      "Scaled teams via a vetted partner network",
-      "Program leadership and governance",
-      "Accountable for outcomes, not just decks",
+      "End-to-end business transformation",
+      "Strategy and implementation",
     ],
   },
 ];
@@ -82,19 +89,19 @@ export const offerings = [
 export const cases = [
   {
     metric: "$100M",
-    title: "GBS stand-up",
+    title: "Centralized Shared Services",
     client: "Fortune 100 chemicals",
-    type: "Operating model",
+    type: "Operations Transformation",
   },
   {
-    metric: "10,000+ / 50+",
-    title: "Global reporting-line unification",
+    metric: "10,000+",
+    title: "Employees unified under a single global reporting-line",
     client: "Fortune 10 oil & gas",
     type: "Org transformation",
   },
   {
     metric: "$34M",
-    title: "Indirect procurement",
+    title: "Indirect procurement COGS reduction",
     client: "Fortune 200 refiner",
     type: "Cost & procurement",
   },
@@ -107,13 +114,13 @@ export const cases = [
   {
     metric: "PE",
     title: "Commercial due diligence",
-    client: "Solar developer",
+    client: "Top-10 PE firm",
     type: "Private equity",
   },
   {
     metric: "PE",
     title: "Operational due diligence",
-    client: "Smoke-detector manufacturer",
+    client: "Top-10 PE firm",
     type: "Private equity",
   },
 ];

@@ -29,16 +29,36 @@ export default function WhatIDo() {
                 </div>
                 <div className="offer-row-body">
                   <p className="lede">{o.summary}</p>
-                  <ul className="offer-row-points">
-                    {o.points.map((p, j) => (
-                      <li key={j}>
-                        <span className="point-tick" aria-hidden="true">
-                          ✦
+                  {o.groups ? (
+                    o.groups.map((g, gi) => (
+                      <div className="offer-row-group" key={gi}>
+                        <span className="offer-row-group-heading">
+                          {g.heading}
                         </span>
-                        {p}
-                      </li>
-                    ))}
-                  </ul>
+                        <ul className="offer-row-points">
+                          {g.items.map((it, j) => (
+                            <li key={j}>
+                              <span className="point-tick" aria-hidden="true">
+                                ✦
+                              </span>
+                              {it}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))
+                  ) : (
+                    <ul className="offer-row-points">
+                      {o.points.map((p, j) => (
+                        <li key={j}>
+                          <span className="point-tick" aria-hidden="true">
+                            ✦
+                          </span>
+                          {p}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </article>
             </Reveal>

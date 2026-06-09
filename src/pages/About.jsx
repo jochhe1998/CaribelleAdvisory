@@ -47,7 +47,7 @@ export default function About() {
               </div>
               <Reveal delay={0.1} className="about-portrait-meta">
                 <span className="serif-accent">Joseph</span>
-                <span className="muted">Principal · ex–BCG (US)</span>
+                <span className="muted">Freelancer · ex–BCG (US)</span>
               </Reveal>
             </div>
 
