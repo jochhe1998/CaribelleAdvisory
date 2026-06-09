@@ -38,8 +38,8 @@ export const about = {
 
 export const stats = [
   { value: 150, prefix: "$", suffix: "M+", label: "In transformational initiatives" },
-  { value: 10000, suffix: "+", label: "Roles updated and relocated" },
-  { value: 4, suffix: "", label: "Years of BCG experience" },
+  { value: 10000, suffix: "+", label: "Roles updated through org transformation" },
+  { value: 4, suffix: "", label: "Years of BCG experience in Houston, TX" },
 ];
 
 // New "What we do" capability matrix (sits before the engagement models).
