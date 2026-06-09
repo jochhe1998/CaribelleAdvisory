@@ -1,5 +1,4 @@
 import Nav from "./components/Nav";
-import SideNav from "./components/SideNav";
 import Footer from "./components/Footer";
 import CursorGlow from "./components/CursorGlow";
 import ScrollProgress from "./components/ScrollProgress";
@@ -17,7 +16,6 @@ export default function App() {
       <CursorGlow />
       <ScrollProgress />
       <Nav />
-      <SideNav />
       <main>
         <Hero />
         <AboutBand />
