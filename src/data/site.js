@@ -22,9 +22,9 @@ export const sections = [
 ];
 
 export const hero = {
-  eyebrow: "Boutique strategy & operations consultant",
+  eyebrow: "Freelance & Boutique consultancy",
   headline: ["MBB performance,", "without the price."],
-  sub: "Boston Consulting Group–trained freelance consultant & boutique consulting programs.",
+  sub: "Experienced Boston Consulting Group (BCG) consultant, turned freelancer and boutique consultancy.",
 };
 
 export const about = {
