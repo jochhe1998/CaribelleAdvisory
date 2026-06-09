@@ -18,8 +18,7 @@ export default function ContactCTA() {
         </Reveal>
         <Reveal delay={0.12}>
           <p className="lede measure contact-cta-sub">
-            Grab a time that works below, or email me directly — either way,
-            you&rsquo;ll hear back from me, not an assistant.
+            Grab a time that works below, or email me directly.
           </p>
         </Reveal>
 
