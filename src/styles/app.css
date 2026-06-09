@@ -813,7 +813,8 @@ section[id] { scroll-margin-top: 5rem; }
 }
 .scheduler-tab:hover { color: var(--ink); }
 .scheduler-tab.is-active { background: var(--forest); color: var(--cream); }
-.scheduler-embed { min-height: 660px; width: 100%; }
+/* explicit height (not min-height) so Calendly's height:100% iframe fills it */
+.scheduler-embed { height: 760px; width: 100%; }
 
 .contact-cta-actions {
   display: flex;
@@ -1122,6 +1123,8 @@ section[id] { scroll-margin-top: 5rem; }
 @media (max-width: 720px) {
   .section-head { flex-direction: column; align-items: flex-start; }
   .stats-strip { grid-template-columns: 1fr; gap: 1.6rem; }
+  /* Calendly stacks the month grid + time slots on narrow screens — needs more room */
+  .scheduler-embed { height: 1040px; }
   .offer-grid,
   .capability-grid,
   .case-grid,
