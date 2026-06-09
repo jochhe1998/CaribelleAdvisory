@@ -37,7 +37,7 @@ export const sections = [
 
 export const hero = {
   eyebrow: "Freelance & Boutique consultancy",
-  headline: ["MBB performance,", "without the price."],
+  headline: ["MBB performance,", "without the price tag."],
   sub: "Experienced Boston Consulting Group (BCG) consultant, turned freelancer and boutique consultancy.",
 };
 

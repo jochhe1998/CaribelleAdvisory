@@ -17,7 +17,7 @@ export default function Footer() {
             <p className="footer-word">Caribelle</p>
             <p className="footer-word footer-word-2">Advisory</p>
             <p className="lede measure-sm footer-tag">
-              MBB performance, without the price.
+              MBB performance, without the price tag.
             </p>
           </div>
 
