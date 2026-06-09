@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { motion } from "framer-motion";
 import Aurora from "../components/Aurora";
 import joseph from "../assets/joseph.jpeg";
-import { hero } from "../data/site";
+import { hero, brand } from "../data/site";
 
 const EASE = [0.22, 1, 0.36, 1];
 
@@ -63,8 +63,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: EASE, delay: 0.85 }}
           >
-            <a href="#contact" className="btn btn-gold">
-              Start a conversation <span className="arrow">→</span>
+            <a href={`mailto:${brand.email}`} className="btn btn-gold">
+              Contact me <span className="arrow">→</span>
             </a>
             <a href="#track-record" className="btn btn-ghost">
               See the track record <span className="arrow">→</span>

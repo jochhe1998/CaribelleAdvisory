@@ -72,7 +72,7 @@ export default function Nav() {
           className="btn btn-gold nav-cta"
           onClick={(e) => go(e, "contact")}
         >
-          Start a conversation <span className="arrow">→</span>
+          Contact me <span className="arrow">→</span>
         </a>
 
         <button
@@ -116,7 +116,7 @@ export default function Nav() {
               className="btn btn-gold"
               onClick={(e) => go(e, "contact")}
             >
-              Start a conversation <span className="arrow">→</span>
+              Contact me <span className="arrow">→</span>
             </a>
           </motion.div>
         )}

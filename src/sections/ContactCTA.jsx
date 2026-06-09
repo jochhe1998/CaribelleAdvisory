@@ -25,7 +25,7 @@ export default function ContactCTA() {
 
         <Reveal delay={0.18} className="contact-cta-actions flex gap wrap">
           <a href={`mailto:${brand.email}`} className="btn btn-gold">
-            Start a conversation <span className="arrow">→</span>
+            Contact me <span className="arrow">→</span>
           </a>
         </Reveal>
 
