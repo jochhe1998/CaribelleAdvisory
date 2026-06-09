@@ -17,8 +17,7 @@ export default function Footer() {
             <p className="footer-word">Caribelle</p>
             <p className="footer-word footer-word-2">Advisory</p>
             <p className="lede measure-sm footer-tag">
-              MBB-grade strategy &amp; operations — partner-direct across the
-              Caribbean and North America.
+              MBB performance, without the price.
             </p>
           </div>
 

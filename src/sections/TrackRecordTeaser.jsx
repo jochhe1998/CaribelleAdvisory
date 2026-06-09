@@ -19,10 +19,8 @@ export default function TrackRecordTeaser() {
         <div className="case-grid">
           {cases.map((c, i) => (
             <Reveal key={i} delay={0.05 * i} className="case-card card">
-              <div className="case-top">
-                <span className="case-metric">{c.metric}</span>
-                <span className="case-type">{c.type}</span>
-              </div>
+              <span className="case-type">{c.type}</span>
+              <span className="case-metric">{c.metric}</span>
               <h3 className="case-title">{c.title}</h3>
               <p className="case-client">{c.client}</p>
             </Reveal>

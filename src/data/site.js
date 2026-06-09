@@ -23,13 +23,13 @@ export const sections = [
 
 export const hero = {
   eyebrow: "Boutique strategy & operations consultant",
-  headline: ["MBB performance.", "Without the price."],
-  sub: "Boston Consulting Group–trained freelance consultant & boutique consultancy.",
+  headline: ["MBB performance,", "without the price."],
+  sub: "Boston Consulting Group–trained freelance consultant & boutique consulting programs.",
 };
 
 export const about = {
   eyebrow: "About",
-  title: "A Big-3 Operator, working 1:1 with you.",
+  title: "A Big-3 Operator, working 1:1 with your team.",
   paragraphs: [
     "Joseph spent his career at the Boston Consulting Group Houston — one of the world's “Big 3” strategy firms — leading large-scale organizational and operations transformations for some of the largest companies in energy, chemicals, and industrials.",
     "He left BCG to get married and start his family, and now provides international consulting services across North America and the Caribbean, both as an individual freelancer and leading small-team projects.",
@@ -48,7 +48,7 @@ export const whatWeDo = {
   title: "What we do.",
   groups: [
     {
-      heading: "Strategy & Growth",
+      heading: "Strategy and Growth",
       items: [
         "Corporate & growth strategy",
         "Market entry and expansion",
@@ -59,23 +59,24 @@ export const whatWeDo = {
     {
       heading: "Operations",
       items: [
-        "Procurement diagnostic and transformation",
-        "Shared services center setup & offshoring",
+        "Operation improvement programs",
+        "Offshoring and Onshoring",
+        "Shared Service Center Strategy",
+        "Procurement diagnostics and transformation",
       ],
     },
     {
-      heading: "Organization & People",
+      heading: "Organization and People",
       items: [
-        "Org design",
+        "Organizational redesign",
         "Workforce planning",
-        "Compensation and incentive design",
-        "HR transformation",
+        "Comp & Ben Benchmarking",
       ],
     },
     {
-      heading: "Digital, Data & Tech",
+      heading: "Digital, Data and Tech",
       items: [
-        "Custom software build and implementation (partnership)",
+        "Custom software build and implementation (Utilizes our digital partner)",
         "Digital transformation strategy",
         "AI / GenAI strategy",
       ],
@@ -89,8 +90,8 @@ export const offerings = [
     no: "01",
     title: "Ad-hoc Support",
     summary:
-      "Immediate full-time or part-time support with no contract (surge pricing) — embed with your team and spin up as we go.",
-    bestFor: "High-impact projects with tight deadlines, or under-resourced teams.",
+      "Immediate full-time or part-time support with no contract — embed directly with your team and ramp up as we go.",
+    bestFor: "High-impact projects with tight deadlines.",
   },
   {
     no: "02",
@@ -103,7 +104,7 @@ export const offerings = [
   {
     no: "03",
     title: "Caribelle Led Projects",
-    summary: "Scoped projects with fixed outcomes & deliverables.",
+    summary: "Scoped projects with fixed deliverables.",
     bestFor:
       "Small–large businesses who want outside perspectives or capabilities not currently in-house.",
   },
@@ -111,9 +112,8 @@ export const offerings = [
     no: "04",
     title: "Major Transformational Program",
     summary:
-      "Major strategic business projects, with or without implementation — end-to-end transformation delivered by a small 3–4 person team.",
-    bestFor:
-      "Med–large businesses pursuing major strategic and implementation transformations; best suited to technology transformations.",
+      "Major strategic business projects with a small 3–4 person team.",
+    bestFor: "Major strategic transformations.",
   },
 ];
 
@@ -143,13 +143,13 @@ export const cases = [
     type: "Org transformation",
   },
   {
-    metric: "PE",
+    metric: "$1B sale",
     title: "Commercial due diligence",
     client: "Top-10 PE firm",
     type: "Private equity",
   },
   {
-    metric: "PE",
+    metric: "$500M sale",
     title: "Operational due diligence",
     client: "Top-10 PE firm",
     type: "Private equity",
