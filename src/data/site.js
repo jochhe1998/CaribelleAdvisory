@@ -112,8 +112,7 @@ export const offerings = [
     title: "Weekly Retainers",
     summary:
       "Retainer-based hourly work — e.g. 10 hours per week, for 6 weeks.",
-    bestFor:
-      "Small–mid teams that can't commit to a new role, need flexible support, or want an outside perspective.",
+    bestFor: "Small–mid teams who need flexible support.",
   },
   {
     no: "03",
