@@ -6,9 +6,23 @@
 export const brand = {
   name: "Caribelle Advisory",
   principal: "Joseph",
-  // TODO: confirm full name, LinkedIn, scheduling link
+  // TODO: confirm full name, LinkedIn
   email: "joseph.herrera@caribelleadvisory.com",
   location: "Caribbean & North America",
+};
+
+// Calendly booking — inline embed in the contact section.
+export const scheduling = {
+  meetings: [
+    {
+      label: "15-min intro",
+      url: "https://calendly.com/joseph-herrera-caribelleadvisory/15-minute-meeting",
+    },
+    {
+      label: "30-min meeting",
+      url: "https://calendly.com/joseph-herrera-caribelleadvisory/30min",
+    },
+  ],
 };
 
 // Landing-page sections — drives the side nav and footer links.

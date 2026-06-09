@@ -777,8 +777,56 @@ section[id] { scroll-margin-top: 5rem; }
   align-items: center;
 }
 .contact-cta-title { margin: 1.2rem 0 1.4rem; }
-.contact-cta-sub { margin-bottom: 2.2rem; }
-.contact-cta-actions { justify-content: center; margin-bottom: 2.5rem; }
+.contact-cta-sub { margin-bottom: 2.6rem; }
+
+/* Calendly scheduler card */
+.contact-scheduler { width: 100%; display: flex; justify-content: center; }
+.scheduler {
+  width: min(100%, 760px);
+  background: var(--paper);
+  border: 1px solid var(--line-light);
+  border-radius: 20px;
+  padding: 1.1rem;
+  box-shadow: 0 36px 70px -34px rgba(8, 25, 18, 0.6);
+}
+.scheduler-toggle {
+  display: flex;
+  gap: 0.3rem;
+  width: fit-content;
+  margin: 0 auto 1rem;
+  padding: 0.3rem;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+.scheduler-tab {
+  border: none;
+  background: transparent;
+  padding: 0.55rem 1.2rem;
+  border-radius: 999px;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background 0.35s var(--ease), color 0.35s var(--ease);
+}
+.scheduler-tab:hover { color: var(--ink); }
+.scheduler-tab.is-active { background: var(--forest); color: var(--cream); }
+.scheduler-embed { min-height: 660px; width: 100%; }
+
+.contact-cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 2.4rem;
+}
+.contact-or {
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: color-mix(in srgb, var(--cream) 62%, transparent);
+}
 .ai-stub {
   display: inline-flex;
   align-items: center;
