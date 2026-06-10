@@ -98,6 +98,34 @@ export const whatWeDo = {
   ],
 };
 
+// "What I'm working on now" — current engagement, anonymized.
+export const now = {
+  eyebrow: "Working on now",
+  title: "AI transformation for a regional insurance provider",
+  meta: "Phase 1 · modules run in any order",
+  modules: [
+    {
+      no: "01",
+      label: "NewCo business case",
+      points: [
+        "Strategic assessment & North Star",
+        "Data-readiness & quality review",
+        "Market sizing & the financial case",
+        "Five-year AI & technology roadmap",
+      ],
+    },
+    {
+      no: "02",
+      label: "Insurance of the future",
+      points: [
+        "Best-in-class global insurance workflows",
+        "New products & service offerings",
+        "C-suite workshop to shortlist and size the prize",
+      ],
+    },
+  ],
+};
+
 // Engagement models — four ways to work together.
 export const offerings = [
   {

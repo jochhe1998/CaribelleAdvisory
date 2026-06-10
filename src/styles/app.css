@@ -574,6 +574,106 @@ section[id] { scroll-margin-top: 5rem; }
 }
 
 /* ============================================================
+   WHAT I'M WORKING ON NOW (drifting embers)
+   ============================================================ */
+.now-section {
+  position: relative;
+  overflow: hidden;
+  padding-block: clamp(3.5rem, 7vw, 6rem);
+  background:
+    radial-gradient(120% 130% at 50% 0%, rgba(46, 125, 91, 0.16), transparent 60%),
+    var(--ink);
+}
+.embers {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.now-inner { position: relative; z-index: 1; }
+.now-head { text-align: center; max-width: 46rem; margin: 0 auto 2.6rem; }
+.now-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  justify-content: center;
+}
+.now-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--gold-bright);
+  box-shadow: 0 0 0 0 rgba(228, 203, 142, 0.6);
+  animation: pulse-gold 2.6s ease-out infinite;
+}
+@keyframes pulse-gold {
+  0% { box-shadow: 0 0 0 0 rgba(228, 203, 142, 0.5); }
+  70% { box-shadow: 0 0 0 11px rgba(228, 203, 142, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(228, 203, 142, 0); }
+}
+.now-title { margin-top: 1rem; }
+.now-meta {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+}
+.now-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1rem, 2vw, 1.5rem);
+  max-width: 60rem;
+  margin: 0 auto;
+}
+.now-card {
+  padding: 1.8rem 1.7rem 2rem;
+  background: rgba(8, 25, 18, 0.42);
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: column;
+}
+.now-card-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line-light);
+}
+.now-no {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  color: var(--gold);
+}
+.now-card-title {
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  font-weight: 400;
+  color: var(--cream);
+  line-height: 1.2;
+}
+.now-points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+.now-points li {
+  position: relative;
+  padding-left: 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: color-mix(in srgb, var(--cream) 76%, transparent);
+}
+.now-points li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0.55em;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+/* ============================================================
    TRACK RECORD (cases)
    ============================================================ */
 .case-grid {
@@ -1127,6 +1227,7 @@ section[id] { scroll-margin-top: 5rem; }
   .scheduler-embed { height: 1040px; }
   .offer-grid,
   .capability-grid,
+  .now-grid,
   .case-grid,
   .principles-grid,
   .steps { grid-template-columns: 1fr; }

@@ -5,6 +5,7 @@ import ScrollProgress from "./components/ScrollProgress";
 import Hero from "./sections/Hero";
 import AboutBand from "./sections/AboutBand";
 import WhatWeDo from "./sections/WhatWeDo";
+import NowSection from "./sections/NowSection";
 import Offerings from "./sections/Offerings";
 import TrackRecordTeaser from "./sections/TrackRecordTeaser";
 import Clients from "./sections/Clients";
@@ -20,6 +21,7 @@ export default function App() {
         <Hero />
         <AboutBand />
         <WhatWeDo />
+        <NowSection />
         <Offerings />
         <TrackRecordTeaser />
         <Clients />

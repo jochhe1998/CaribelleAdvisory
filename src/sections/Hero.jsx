@@ -66,8 +66,8 @@ export default function Hero() {
             <a href={`mailto:${brand.email}`} className="btn btn-gold">
               Contact me <span className="arrow">→</span>
             </a>
-            <a href="#track-record" className="btn btn-ghost">
-              See the track record <span className="arrow">→</span>
+            <a href="#now" className="btn btn-ghost">
+              See what I&rsquo;m working on now <span className="arrow">→</span>
             </a>
           </motion.div>
         </div>
