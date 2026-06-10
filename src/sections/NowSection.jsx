@@ -17,9 +17,6 @@ export default function NowSection() {
           <Reveal delay={0.06}>
             <h2 className="h-section now-title">{now.title}</h2>
           </Reveal>
-          <Reveal delay={0.1}>
-            <p className="now-meta">{now.meta}</p>
-          </Reveal>
         </div>
 
         <div className="now-grid">

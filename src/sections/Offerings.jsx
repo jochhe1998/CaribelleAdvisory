@@ -3,7 +3,7 @@ import { offerings } from "../data/site";
 
 export default function Offerings() {
   return (
-    <section id="services" className="section theme-dark offerings">
+    <section id="services" className="section theme-paper offerings">
       <div className="container">
         <div className="section-head">
           <div>

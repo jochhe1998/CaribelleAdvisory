@@ -1,5 +1,6 @@
 import Reveal from "../components/Reveal";
 import Aurora from "../components/Aurora";
+import Embers from "../components/Embers";
 import Scheduler from "../components/Scheduler";
 import { brand } from "../data/site";
 
@@ -7,6 +8,7 @@ export default function ContactCTA() {
   return (
     <section id="contact" className="section theme-forest contact-cta">
       <Aurora variant="gold" />
+      <Embers variant="soft" />
       <div className="container contact-cta-inner">
         <Reveal>
           <p className="eyebrow">Contact</p>

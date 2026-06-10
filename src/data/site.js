@@ -38,14 +38,14 @@ export const sections = [
 export const hero = {
   eyebrow: "Freelance & Boutique consultancy",
   headline: ["MBB performance,", "without the price tag."],
-  sub: "Experienced Boston Consulting Group (BCG) consultant, turned freelancer and boutique consultancy.",
+  sub: "Experienced Boston Consulting Group (BCG) consultant, turned freelancer and boutique consultancy specializing in cost, process, and digital transformations.",
 };
 
 export const about = {
   eyebrow: "About",
   title: "A Big-3 Operator, working 1:1 with your team.",
   paragraphs: [
-    "Joseph spent his career at the Boston Consulting Group Houston — one of the world's “Big 3” strategy firms — leading large-scale organizational and operations transformations for some of the largest companies in energy, chemicals, and industrials.",
+    "Joseph spent his career at the Boston Consulting Group Houston — one of the world's “Big 3” strategy firms — leading large-scale organizational, process, and tech transformations for some of the largest companies in energy, chemicals, and industrials.",
     "He left BCG to get married and start his family, and now provides international consulting services across North America and the Caribbean, both as an individual freelancer and leading small-team projects.",
   ],
 };
@@ -100,27 +100,26 @@ export const whatWeDo = {
 
 // "What I'm working on now" — current engagement, anonymized.
 export const now = {
-  eyebrow: "Working on now",
-  title: "AI transformation for a regional insurance provider",
-  meta: "Phase 1 · modules run in any order",
+  eyebrow: "What I'm working on now",
+  title: "Phase 1 | AI transformation for a major regional insurance provider",
   modules: [
     {
       no: "01",
-      label: "NewCo business case",
+      label: "Business Case",
       points: [
-        "Strategic assessment & North Star",
-        "Data-readiness & quality review",
-        "Market sizing & the financial case",
-        "Five-year AI & technology roadmap",
+        "Regional growth strategy & north star",
+        "Financial model (TAM, Penetration, OPEX, CAPEX, etc.)",
+        "Data readiness evaluation",
+        "Five year AI & technology roadmap",
       ],
     },
     {
       no: "02",
       label: "Insurance of the future",
       points: [
-        "Best-in-class global insurance workflows",
-        "New products & service offerings",
-        "C-suite workshop to shortlist and size the prize",
+        "Art-of-the-possible | best-in-class global insurance workflows",
+        "New products & service offerings unlocked through new technology",
+        "C-suite workshop to prioritize opportunities and size-the-prize",
       ],
     },
   ],

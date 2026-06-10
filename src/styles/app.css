@@ -785,6 +785,31 @@ section[id] { scroll-margin-top: 5rem; }
   white-space: nowrap;
 }
 
+/* Light-theme variants — Offerings & Clients now sit on paper/cream */
+.theme-paper .offer-best-for,
+.theme-cream .offer-best-for {
+  border-color: var(--line);
+  background: rgba(194, 161, 91, 0.09);
+  color: var(--ink-soft);
+}
+.theme-paper .offer-best-label,
+.theme-cream .offer-best-label { color: var(--gold); }
+
+.theme-paper .client-chip,
+.theme-cream .client-chip {
+  background: var(--paper-2);
+  border-color: var(--line);
+}
+.theme-paper .client-chip:hover,
+.theme-cream .client-chip:hover {
+  border-color: rgba(194, 161, 91, 0.55);
+  background: var(--cream);
+}
+.theme-paper .client-mark,
+.theme-cream .client-mark { filter: grayscale(1); opacity: 0.62; }
+.theme-paper .client-name,
+.theme-cream .client-name { color: var(--ink-soft); }
+
 /* ============================================================
    APPROACH / HOW I WORK
    ============================================================ */

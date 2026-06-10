@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import Aurora from "../components/Aurora";
+import Embers from "../components/Embers";
 import joseph from "../assets/joseph.jpeg";
 import { hero, brand } from "../data/site";
 
@@ -21,6 +22,7 @@ export default function Hero() {
   return (
     <section ref={ref} className="hero theme-dark" onPointerMove={onMove}>
       <Aurora variant="teal" />
+      <Embers variant="soft" />
       <div className="hero-spot" aria-hidden="true" />
 
       <div className="container hero-inner">

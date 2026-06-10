@@ -1,8 +1,14 @@
 import { useEffect, useRef } from "react";
 
 // Subtle drifting embers — small warm glints that rise and twinkle.
-// Canvas-based, low density / low opacity for a refined, quiet effect.
-export default function Embers() {
+// variant "default": smaller, brighter, quicker twinkle (the Now section).
+// variant "soft":    bigger, duller, slow to light up and cool down (hero, contact).
+const VARIANTS = {
+  default: { rMin: 0.6, rMax: 2, aMin: 0.05, aMax: 0.32, twMin: 0.003, twMax: 0.011, vyMin: -0.28, vyMax: -0.05, glow: 6, area: 42000, cap: 34 },
+  soft: { rMin: 1.4, rMax: 4.2, aMin: 0.02, aMax: 0.14, twMin: 0.0009, twMax: 0.0032, vyMin: -0.16, vyMax: -0.02, glow: 8, area: 70000, cap: 26 },
+};
+
+export default function Embers({ variant = "default" }) {
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -10,6 +16,7 @@ export default function Embers() {
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const cfg = VARIANTS[variant] || VARIANTS.default;
 
     // gold-bright, antique gold, faint lime — the brand accents
     const COLORS = ["228,203,142", "194,161,91", "212,223,51"];
@@ -32,18 +39,17 @@ export default function Embers() {
     const make = () => ({
       x: rand(0, w),
       y: rand(0, h),
-      r: rand(0.6, 2),
-      vy: rand(-0.28, -0.05),
-      vx: rand(-0.12, 0.12),
-      base: rand(0.05, 0.32),
-      tw: rand(0.003, 0.011),
+      r: rand(cfg.rMin, cfg.rMax),
+      vy: rand(cfg.vyMin, cfg.vyMax),
+      vx: rand(-0.1, 0.1),
+      base: rand(cfg.aMin, cfg.aMax),
+      tw: rand(cfg.twMin, cfg.twMax),
       tp: Math.random() * Math.PI * 2,
       c: COLORS[Math.floor(Math.random() * COLORS.length)],
     });
 
     const init = () => {
-      // density scales with area, capped low for subtlety
-      const count = Math.min(34, Math.max(14, Math.round((w * h) / 42000)));
+      const count = Math.min(cfg.cap, Math.max(10, Math.round((w * h) / cfg.area)));
       particles = Array.from({ length: count }, make);
     };
 
@@ -54,12 +60,12 @@ export default function Embers() {
           p.x += p.vx;
           p.y += p.vy;
           p.tp += p.tw;
-          if (p.y < -12) { p.y = h + 12; p.x = rand(0, w); }
-          if (p.x < -12) p.x = w + 12;
-          else if (p.x > w + 12) p.x = -12;
+          if (p.y < -14) { p.y = h + 14; p.x = rand(0, w); }
+          if (p.x < -14) p.x = w + 14;
+          else if (p.x > w + 14) p.x = -14;
         }
         const alpha = p.base * (0.45 + 0.55 * Math.sin(p.tp));
-        const rad = p.r * 6;
+        const rad = p.r * cfg.glow;
         const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, rad);
         g.addColorStop(0, `rgba(${p.c},${alpha})`);
         g.addColorStop(1, `rgba(${p.c},0)`);
@@ -89,7 +95,7 @@ export default function Embers() {
       cancelAnimationFrame(raf);
       window.removeEventListener("resize", onResize);
     };
-  }, []);
+  }, [variant]);
 
   return <canvas ref={canvasRef} className="embers" aria-hidden="true" />;
 }

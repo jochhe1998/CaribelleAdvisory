@@ -9,7 +9,7 @@ export default function Clients() {
   const row2 = clients.slice(half);
 
   return (
-    <section id="clients" className="section theme-dark clients">
+    <section id="clients" className="section theme-paper clients">
       <div className="container">
         <Reveal className="clients-head">
           <p className="eyebrow">Experience Across</p>
