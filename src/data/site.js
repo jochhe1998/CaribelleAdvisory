@@ -38,21 +38,21 @@ export const sections = [
 export const hero = {
   eyebrow: "Freelance & Boutique consultancy",
   headline: ["MBB performance,", "without the price tag."],
-  sub: "Experienced Boston Consulting Group (BCG) consultant, turned freelancer and boutique consultancy specializing in cost, process, and digital transformations.",
+  sub: "Experienced Boston Consulting Group (BCG) consultant, turned freelancer specializing in process, digital, organizational, and cost transformations.",
 };
 
 export const about = {
   eyebrow: "About",
   title: "A Big-3 Operator, working 1:1 with your team.",
   paragraphs: [
-    "Joseph spent his career at the Boston Consulting Group Houston — one of the world's “Big 3” strategy firms — leading large-scale organizational, process, and tech transformations for some of the largest companies in energy, chemicals, and industrials.",
-    "He left BCG to get married and start his family, and now provides international consulting services across North America and the Caribbean, both as an individual freelancer and leading small-team projects.",
+    "Joseph spent the last four years at BCG's Houston office — one of the world's “Big 3” strategy firms — leading large-scale organizational transformations for some of the largest companies in energy, chemicals, and industrials.",
+    "He recently left BCG to get married and start his family, and now provides international consulting services across North America and the Caribbean, both as an individual freelancer and leading small-team projects.",
   ],
 };
 
 export const stats = [
   { value: 150, prefix: "$", suffix: "M+", label: "In transformational initiatives" },
-  { value: 10000, suffix: "+", label: "Roles updated through org transformation" },
+  { value: 10000, suffix: "+", label: "Employee roles relocated through org transformation" },
   { value: 4, suffix: "", label: "Years of BCG experience in Houston, TX" },
 ];
 
